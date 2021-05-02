@@ -1,0 +1,257 @@
+/* scrolling */
+#html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+
+}
+/*  Navigation bar:- logo and image */
+
+#logo{
+    margin: 34px 45px;
+
+}
+#logo img{
+    height: 56px;
+    margin: 34px 45px;
+
+}
+
+/*  Navigation bar:- List styling */
+#navbar{
+    display: flex;
+    position:relative;
+    align-items: center;
+    top: 0px;
+}
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar::before{
+   content: "";
+   background-color: black;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   height: 65%;
+   width: 100%;
+   z-index: -5;
+   opacity: 0.7;
+   
+}
+
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    color: whitesmoke;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    color: black;
+   background-color: white;
+}
+
+
+/* Home section */
+#home{
+display: flex;
+flex-direction: column;
+padding: 13px 200px;
+height: 217px;
+justify-content: center;
+align-items: center;
+}
+#home::before{
+    content: "";
+   background: url('home.jpg') no-repeat center/cover;  
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 75%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+ }
+
+
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* about Section */
+
+#about{
+    margin: 25px;
+    display: flex;
+    padding: auto;
+    height: 200px;
+    display: block
+}
+
+#about .box{
+    
+    border-radius: 15rem;
+    
+}
+/* #about .box img{
+    height:299px;
+    margin: auto;
+    display: block; */
+
+
+
+
+
+
+/* blog section */
+
+#blog{
+    margin: 34px;
+    display: flex;
+    padding: 15px;
+    border-radius: 20rem;
+}
+
+#blog .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 40px;
+    border-radius: 28px;
+    background-color: burlywood;
+}
+#blog .box img{
+    height:200px;
+    margin: auto;
+    display: block;
+
+
+}
+#blog .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+/* Utility classes */
+
+.h-primary{
+    color: rgb(70, 26, 40);
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+/* .btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+} */
+
+.center{
+    text-align: center;
+}
+/*contact section */
+
+#contact{
+position: relative;
+}
+#contact::before{
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    background: url('contact.jpg')no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding-bottom: 34%;
+
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.3rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* Feedback section */
+
+#feedback{
+    position: relative;
+    }
+    #feedback::before{
+    
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.3;
+        background: url('feedback.jpg')no-repeat center center/cover;
+    }
+    #feedback-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       padding-bottom: 34%;
+    
+    }
+    
+    #feedback-box input,
+    #feedback-box textarea{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size: 1.3rem;
+    }
+    #feedback-box form{
+        width: 40%;
+    }
+    #feedback-box label{
+        font-size: 1.5rem;
+        font-family: 'Bree Serif', seriffeedback   
+    } 
+
+    /* Footer section*/
+ #footer {
+     background: black;
+ }
