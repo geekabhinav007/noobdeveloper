@@ -7,3 +7,4 @@ https://geekabhinav007.github.io/noobdeveloper/
 ###### This is not Fully Responsive website This will work fine on Laptop 
 ###### but on mobile and Tablet you will face problem. so better to preview
 ###### in laptop or PC.
+###### Thanks.
